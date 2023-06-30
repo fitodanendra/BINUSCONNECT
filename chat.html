@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="chat.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+          <a href="/homepage.html"><h2 class="BINUS">BINUS</h2></a>
+          <a href="/homepage.html"><h2 class="CONNECT">CONNECT</h2></a>
+           </div>
+
+           <div class="nav-right">
+            
+
+
+
+            <ul>
+                <li><i class="fas fa-comment-alt" style="color: #ffffff;"></i></li>
+                <li><i class="fas fa-bell" style="color: #ffffff;"></i></li>
+                
+            </ul>
+
+            <div class="nav-user-icon" onclick="settingsMenuToggle()">
+                <img src="/mini profile.png" alt="">
+            </div>
+
+            
+           </div>
+
+           <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="/mini profile.png" alt="">
+                    <div>
+                        <p>Fito Danendra</p>
+                       <a href="/profile.html">Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                       <a href="#">Help us to improve</a>
+                    </div>
+                </div>
+                <hr>
+               <div class="settings-links">
+                <img src="/images/setting.png" class="settings-icon">
+               <a href="#">Settings<img src="/images/arrow.png" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="/images/help.png" class="settings-icon">
+               <a href="#">Help & Support<img src="/images/arrow.png" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="/images/logout.png" class="settings-icon">
+               <a href="#">Logout<img src="/images/arrow.png" width="10px"></a>
+            </div>
+    
+            </div>
+            
+           </div>
+
+
+    </nav>
+
+    <div id="app" class="app">
+
+        <!-- LEFT SECTION -->
+    
+        <section id="main-left" class="main-left">
+          <!-- header -->
+          <div id="header-left" class="header-left">
+            <a class="hamburger-btn"><i class="fas fa-bars"></i></a>
+            <a class="search-btn"><i class="fas fa-search"></i></a>
+            <a class="option-btn"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+    
+          <!-- chat list -->
+          <div id="chat-list" class="chat-list">
+            <!-- user lists -->
+            <div id="friends" class="friends">
+              <!-- photo -->
+              <div class="profile friends-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              
+              <div class="friends-credent">
+                <!-- name -->
+                <span class="friends-name">Dan Heng</span>
+                <!-- last message -->
+                <span class="friends-message">oke</span>
+              </div>
+              <!-- notification badge -->
+              <span class="badge notif-badge"></span>
+            </div>
+    
+            <div id="friends" class="friends">
+              <!-- photo -->
+              <div class="profile friends-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              
+              <div class="friends-credent">
+                <!-- name -->
+                <span class="friends-name">Nero</span>
+                <!-- last message -->
+                <span class="friends-message">gatau</span>
+              </div>
+              <!-- notification badge -->
+              <span class="badge notif-badge">1</span>
+            </div>
+    
+            <div id="friends" class="friends">
+              <!-- photo -->
+              <div class="profile friends-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              
+              <div class="friends-credent">
+                <!-- name -->
+                <span class="friends-name">Amadeus Wolfgang</span>
+                <!-- last message -->
+                <span class="friends-message">Sehr gud, Danke!</span>
+              </div>
+              <!-- notification badge -->
+              <span class="badge notif-badge">26</span>
+            </div>
+    
+            <div id="friends" class="friends">
+              <!-- photo -->
+              <div class="profile friends-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              
+              <div class="friends-credent">
+                <!-- name -->
+                <span class="friends-name">Vladilena Milize</span>
+                <!-- last message -->
+                <span class="friends-message">iya nanti aku ambil kalo sempet</span>
+              </div>
+              <!-- notification badge -->
+              <span class="badge notif-badge">1</span>
+            </div>
+    
+            <div id="friends" class="friends">
+              <!-- photo -->
+              <div class="profile friends-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              
+              <div class="friends-credent">
+                <!-- name -->
+                <span class="friends-name">Aldi Taheer</span>
+                <!-- last message -->
+                <span class="friends-message">Look at the stars</span>
+              </div>
+              <!-- notification badge -->
+              <span class="badge notif-badge">7</span>
+            </div>
+    
+            <div id="friends" class="friends">
+              <!-- photo -->
+              <div class="profile friends-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              
+              <div class="friends-credent">
+                <!-- name -->
+                <span class="friends-name">Walter Pinkman</span>
+                <!-- last message -->
+                <span class="friends-message">awkoawokwkoawk</span>
+              </div>
+              <!-- notification badge -->
+              <span class="badge notif-badge">2</span>
+            </div>
+          </div>
+    
+          <!-- self-profile -->
+          <div id="self-info" class="self-info">
+            <!-- photo -->
+            <div class="profile your-photo">
+              <img src="/mini profile.png" alt="">
+            </div>
+            <!-- name -->
+            <h4 class="name your-name">Fito Danendra</h4>
+            <!-- setting btn -->
+            <span class="glyphicon glyphicon-cog"></span>
+          </div>
+        </section>
+    
+    
+    
+        <!-- RIGHT SECTION -->
+    
+        <section id="main-right" class="main-right">
+          <!-- header -->
+          <div id="header-right" class="header-right">
+            <!-- profile pict -->
+            <div id="header-img" class="profile header-img">
+              <img src="/pfp.png" alt="">
+            </div>
+    
+            <!-- name -->
+            <h4 class="name friend-name">Dan Heng</h4>
+    
+            <!-- some btn -->
+            <div class="some-btn">
+              <a class="facetime-video"><i class="fas fa-video"></i></a>
+              <a class="earphone"><i class="fas fa-phone-alt"></i></a>
+              <a class="option-btn"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          </div>
+    
+          <!-- chat area -->
+          <div id="chat-area" class="chat-area">
+            <!-- chat content -->
+    
+            <!-- FRIENDS CHAT TEMPLATE -->
+            <div id="friends-chat" class="friends-chat">
+              <div class="profile friends-chat-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              <div class="friends-chat-content">
+                <p class="friends-chat-name">Dan Heng</p>
+                <p class="friends-chat-balloon">p</p>
+                <h5 class="chat-datetime">15:41</h5>
+              </div>
+            </div>
+    
+            
+            <!-- YOUR CHAT TEMPLATE -->
+            <div id="your-chat" class="your-chat">
+              <p class="your-chat-balloon">kenapa bang</p>
+              <p class="chat-datetime"><span class="glyphicon glyphicon-ok"></span>15:45</p>
+            </div>
+    
+            <!-- FRIENDS CHAT TEMPLATE -->
+            <div id="friends-chat" class="friends-chat">
+              <div class="profile friends-chat-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              <div class="friends-chat-content">
+                <p class="friends-chat-name">Dan Heng</p>
+                <p class="friends-chat-balloon">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque vero iusto perferendis nemo ad ipsam mollitia ducimus? Et possimus numquam minus impedit tempora, nulla, enim in magni accusamus dolore fugiat nisi culpa exercitationem fuga consequatur eos aliquam perspiciatis. Minima praesentium expedita facere quod labore magnam eveniet commodi veniam porro placeat?</p>
+                <h5 class="chat-datetime">15:45</h5>
+              </div>
+            </div>
+    
+            <!-- FRIENDS CHAT TEMPLATE -->
+            <div id="friends-chat" class="friends-chat">
+              <div class="profile friends-chat-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              <div class="friends-chat-content">
+                <p class="friends-chat-name">Dan Heng</p>
+                <p class="friends-chat-balloon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequatur!</p>
+                <h5 class="chat-datetime">15:46</h5>
+              </div>
+            </div>
+    
+            <!-- YOUR CHAT TEMPLATE -->
+            <div id="your-chat" class="your-chat">
+              <p class="your-chat-balloon">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae amet modi aliquid molestiae. Adipisci, similique dolor expedita error explicabo at cupiditate exercitationem dolorem corrupti. Pariatur.</p>
+              <p class="chat-datetime"><span class="glyphicon glyphicon-ok"></span>15:46</p>
+            </div>
+    
+            <!-- FRIENDS CHAT TEMPLATE -->
+            <div id="friends-chat" class="friends-chat">
+              <div class="profile friends-chat-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              <div class="friends-chat-content">
+                <p class="friends-chat-name">Dan Heng</p>
+                <p class="friends-chat-balloon">kapan mau kerkel?</p>
+                <h5 class="chat-datetime">Sun, Aug 30 | 15:47</h5>
+              </div>
+            </div>
+    
+            <!-- YOUR CHAT TEMPLATE -->
+            <div id="your-chat" class="your-chat">
+              <p class="your-chat-balloon">malem ini</p>
+              <p class="chat-datetime"><span class="glyphicon glyphicon-ok"></span>15:47</p>
+            </div>
+    
+            <!-- FRIENDS CHAT TEMPLATE -->
+            <div id="friends-chat" class="friends-chat">
+              <div class="profile friends-chat-photo">
+                <img src="/pfp.png" alt="">
+              </div>
+              <div class="friends-chat-content">
+                <p class="friends-chat-name">Dan Heng</p>
+                <p class="friends-chat-balloon">oke</p>
+                <h5 class="chat-datetime">15:47</h5>
+              </div>
+            </div>
+    
+    
+          </div>
+    
+          <!-- typing area -->
+          <div id="typing-area" class="typing-area">
+            <!-- input form -->
+            <input id="type-area" class="type-area" placeholder="Type something...">
+            <!-- attachment btn -->
+            <div class="attach-btn">
+              
+            </div>
+            <!-- send btn -->
+            <a class="send-btn" href=""><i class="fas fa-location-arrow"></i></a>
+          </div>
+        </section>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <!-- jQuey, Popper, BootstrapJS -->
+        <script src="bootstrap3.3/js/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap3.3/js/bootstrap.min.js"></script>
+
+
+
+    <script src="homepage.js"></script>
+</body>
+</html>l
